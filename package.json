@@ -1,0 +1,27 @@
+{
+  "name": "react-stepper",
+  "version": "1.0.0",
+  "description": "Example react stepper",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosRissottoB/react-stepper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosRissottoB/react-stepper/issues"
+  },
+  "homepage": "https://github.com/MarcosRissottoB/react-stepper#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
