@@ -1,0 +1,7 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #e96443;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1e90ff, #66078b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1e90ff , #66078b); 
+  font-family: Arial, Helvetica, sans-serif;
+}
