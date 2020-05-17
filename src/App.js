@@ -4,8 +4,11 @@ import React from 'react'
 import { HomePage } from './pages/Layout'
 
 // Global css
-import './styles.css'
+import { GlobalStyles } from './styles/GlobalStyles'
 
 export const App = () => (
-  <HomePage />
+  <>
+    <GlobalStyles />
+    <HomePage />
+  </>
 )
