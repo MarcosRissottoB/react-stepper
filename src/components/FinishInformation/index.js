@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export const FinishInformation = ({ temp, tyc }) => {
-  const terms = tyc === 'true' ? 'acepto' : 'no acepto'
+  const terms = tyc === true ? 'acepto' : 'no acepto'
   return (
     <>
       <p>Su temperatura es de {temp} grados</p>
@@ -12,6 +12,6 @@ export const FinishInformation = ({ temp, tyc }) => {
 }
 
 FinishInformation.propTypes = {
-  temp: PropTypes.number.isRequired,
-  tyc: PropTypes.isRequired.isRequired
+  temp: PropTypes.string.isRequired,
+  tyc: PropTypes.bool.isRequired
 }

@@ -14,7 +14,7 @@ export const Temperature = ({ temperatureChange }) => {
   return (
     <div>
       <h2>¿Qué temperatura tienes?</h2>
-      <Input type='number' onChange={e => handlerChange(e)} placeholder='Ingresa tu temperatura' />
+      <Input onChange={e => handlerChange(e)} placeholder='Ingresa tu temperatura' />
     </div>
   )
 }
