@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Component
-import { HomePage } from './pages/Layout'
+import { HomePage } from './pages/Home'
 
 // Global css
 import { GlobalStyles } from './styles/GlobalStyles'

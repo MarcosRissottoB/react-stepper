@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     background: linear-gradient(to right, #1e90ff , #66078b); 
     height: 100vh;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 800px;
     overscroll-behavior: none;
     width: 100%; 
   }
@@ -31,5 +31,6 @@ export const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     min-height: 100vh;
     padding-bottom: 10px;
+    color: white
   }
 `
