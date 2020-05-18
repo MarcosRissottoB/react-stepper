@@ -5,15 +5,15 @@ export const Div = styled.div`
     flex-direction: row;
     text-align: center;
     margin: 5px;
-    justify-content: space-around;
+    justify-content: center;
 `
 export const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
   border-radius: 3px;
-  color: mediumseagreen;
-  border: 2px solid mediumseagreen;
+  color: white;
+  border: 1px solid white;
   &:hover {
     border: 2px solid mediumslateblue;
     .button {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // Style
 import { Div, Button } from './styles'
@@ -30,4 +31,8 @@ export const TyC = ({ TYCChange }) => {
       </Div>
     </div>
   )
+}
+
+TyC.propTypes = {
+  TYCChange: PropTypes.func.isRequired
 }

@@ -1,26 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StepList } from '../StepList/index'
 import { Step } from '../Step'
 
 // Style
 import { Div } from './styles'
 
-// Component
-import { Temperature } from '../forms/Temperature'
-import { TyC } from '../forms/TemsAndConditions'
-
-const PageThree = () => {
-  console.log('PageThree')
-  return <h2>We have a third page.</h2>
-}
+// Components
+import { Temperature } from '../Temperature'
+import { TyC } from '../TemsAndConditions'
+import { FinishInformation } from '../FinishInformation'
 
 export const Stepper = () => {
+  const [temp, setTemp] = useState('0')
+  const [tyc, setTyc] = useState(false)
+
   const temperatureChange = (value) => {
-    console.log('temperatureChange Stepper', value)
+    setTemp(value)
   }
 
   const TYCChange = (value) => {
-    console.log('TYCChange Stepper', value)
+    setTyc(value)
   }
 
   return (
@@ -36,7 +35,12 @@ export const Stepper = () => {
             TYCChange={(value) => TYCChange(value)}
           />
         </Step>
-        <Step component={PageThree} />
+        <Step>
+          <FinishInformation
+            temp={temp}
+            tyc={tyc}
+          />
+        </Step>
       </StepList>
     </Div>
   )
