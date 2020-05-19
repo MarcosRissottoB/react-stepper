@@ -12,10 +12,8 @@ export const Step = ({
   nextStepClick,
   component,
   children
-}) => {
-  if (isActive === false) return null
-
-  return (
+}) => (
+  isActive &&
     <>
       <ChildComponent>
         {component ? React.createElement(component) : children}
@@ -34,35 +32,25 @@ export const Step = ({
         </Div>
       </Div>
     </>
-  )
-}
+)
 
-const Next = ({ isActive, nextStepClick }) => {
-  if (isActive === false) return null
-
-  return (
+const Next = ({ isActive, nextStepClick }) => (
+  isActive &&
     <button onClick={() => nextStepClick()}>
-    Next
+        Next
     </button>
-  )
-}
+)
 
-const Previous = ({ isActive, previousStepClick }) => {
-  if (isActive === false) return null
-
-  return (
+const Previous = ({ isActive, previousStepClick }) => (
+  isActive &&
     <button onClick={() => previousStepClick()}>
       Previous
     </button>
-  )
-}
+)
 
-const Submit = ({ isActive }) => {
-  if (isActive === false) return null
-
-  return (
+const Submit = ({ isActive }) => (
+  isActive &&
     <button type='submit'>
       Submit
     </button>
-  )
-}
+)
